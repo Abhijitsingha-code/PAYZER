@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">PAYZER</string>
+    <string name="Payzer">PAYZER</string>
+    <string name="login">Log In!</string>
+    <string name="signin">Sign In!</string>
+    <string name="help">Help me!</string>
+    <string name="cont">Continue</string>
+    <string name="login1_text1">always checking on your spendings</string>
+    <string name="login1_text2">say goodbye to&#xA;overspendings</string>
+    <string name="login1_text3">#1</string>
+    <string name="login2_text1">recommending you with financial tips</string>
+    <string name="login2_text2">say hello to efficient&#xA;habits</string>
+    <string name="login2_text3">#2</string>
+    <string name="login3_text1">your data is securely encrypted so even we can’t&#xA;access it</string>
+    <string name="login3_text2">always-free.&#xA;always-focused</string>
+    <string name="login3_text3">#3</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="welcome">Welcome&#xA;Back</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">Get Started!</string>
+    <string name="email">Email Id</string>
+    <string name="hello">Hello&#xA;There</string>
+    <string name="budget_text">Rs 30000</string>
+    <string name="budget">BUDGET</string>
+    <string name="spending">SPENDING</string>
+    <string name="spending_value">Rs 0.000000</string>
+    <string name="next">NEXT</string>
+    <string name="goal">You are one step away from your Goal</string>
+    <string name="budget_input">Enter Your Budget</string>
+    <string name="save_input">Enter The Amount You Want to Save</string>
+    <string name="amount">Amount</string>
+</resources>
