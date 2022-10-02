@@ -11,20 +11,20 @@
     android:backgroundTintMode="add"
     tools:context=".login">
 
-    <Button
-        android:id="@+id/help_me_btn"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:background="@drawable/custom_button"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="@string/help"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        app:backgroundTint="@color/gray"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/continue_btn"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+<!--    <Button-->
+<!--        android:id="@+id/help_me_btn"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:background="@drawable/custom_button"-->
+<!--        android:fontFamily="@font/montserrat_bold"-->
+<!--        android:text="@string/forget_password"-->
+<!--        android:textSize="16sp"-->
+<!--        app:backgroundTint="@color/gray"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/continue_btn"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:textAllCaps="false" />-->
 
     <Button
         android:id="@+id/continue_btn"
@@ -33,14 +33,13 @@
         android:background="@drawable/custom_button"
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/cont"
-        android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/help_me_btn" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:textAllCaps="false" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password_text_layout"
@@ -49,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/montserrat_bold"
         android:hint="@string/password"
         android:inputType="textPassword"
@@ -60,12 +59,10 @@
         app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusTopEnd="10dp"
         app:boxCornerRadiusTopStart="10dp"
-        app:counterEnabled="true"
-        app:counterMaxLength="10"
         app:endIconMode="password_toggle"
         app:endIconTint="@color/white"
         app:hintTextColor="@color/text1_color"
-        app:layout_constraintBottom_toTopOf="@+id/help_me_btn"
+        app:layout_constraintBottom_toTopOf="@+id/forget_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,23 +70,23 @@
         app:startIconTint="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password_editview"
+            android:id="@+id/password_edittext"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/username_text_layout"
+        android:id="@+id/email_text_layout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/montserrat_bold"
-        android:hint="@string/username"
+        android:hint="@string/email"
         android:textColorHint="@color/light_gray"
         android:textSize="16sp"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:textColor="@color/white"
         app:boxBackgroundColor="@color/gray"
         app:boxCornerRadiusBottomEnd="10dp"
@@ -98,17 +95,15 @@
         app:boxCornerRadiusTopStart="10dp"
         app:endIconMode="clear_text"
         app:endIconTint="@color/white"
-        app:counterEnabled="true"
-        app:counterMaxLength="20"
         app:layout_constraintBottom_toTopOf="@+id/password_text_layout"
         app:layout_constraintEnd_toEndOf="@+id/password_text_layout"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/password_text_layout"
-        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
         app:startIconTint="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/username_editview"
+            android:id="@+id/email_editview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textColor="@color/white"/>
@@ -123,7 +118,21 @@
         android:text="@string/welcome"
         android:textColor="@color/text2_color"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/username_text_layout"
-        app:layout_constraintStart_toStartOf="@+id/username_text_layout" />
+        app:layout_constraintBottom_toTopOf="@+id/email_text_layout"
+        app:layout_constraintStart_toStartOf="@+id/email_text_layout" />
+
+    <TextView
+        android:id="@+id/forget_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/forget_password"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/continue_btn"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Transction_Fragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="add">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/label_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColorHint="@color/light_gray"
+            android:textSize="16sp"
+            app:boxBackgroundColor="@color/gray"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:startIconDrawable="@drawable/ic_baseline_label_24"
+            app:startIconTint="@color/text1_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/label_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Label"
+                android:inputType="text"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/amount_Layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColorHint="@color/light_gray"
+            android:textSize="16sp"
+            app:boxBackgroundColor="@color/gray"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_layout"
+            app:startIconDrawable="@drawable/rupee2"
+            app:startIconTint="@color/text1_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amount_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/amount"
+                android:inputType="number"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/description_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColorHint="@color/light_gray"
+            android:textSize="16sp"
+            app:boxBackgroundColor="@color/gray"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amount_Layout"
+            app:startIconDrawable="@drawable/ic_baseline_description_24"
+            app:startIconTint="@color/text1_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/description_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:inputType="text"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/add"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:backgroundTint="@color/text2_color"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_layout" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Widget.AppCompat.TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:text="@string/add_transaction"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:fontFamily="@font/adamina"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

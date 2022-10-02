@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "520592398875",
+    "firebase_url": "https://payzer-7990e-default-rtdb.firebaseio.com",
+    "project_id": "payzer-7990e",
+    "storage_bucket": "payzer-7990e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520592398875:android:4067fec242162577f236be",
+        "android_client_info": {
+          "package_name": "com.example.payzer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520592398875-aicp032pij203obn4rro72qs0ava7gsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2PA7lW2e8fp3AAHZ047fk62G2CqA6n-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520592398875-aicp032pij203obn4rro72qs0ava7gsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

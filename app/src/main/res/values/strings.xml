@@ -1,9 +1,10 @@
 <resources>
+    <string name="add">Add</string>
     <string name="app_name">PAYZER</string>
     <string name="Payzer">PAYZER</string>
     <string name="login">Log In!</string>
     <string name="signin">Sign In!</string>
-    <string name="help">Help me!</string>
+    <string name="forget_password">Forget Password?</string>
     <string name="cont">Continue</string>
     <string name="login1_text1">always checking on your spendings</string>
     <string name="login1_text2">say goodbye to&#xA;overspendings</string>
@@ -16,19 +17,24 @@
     <string name="login3_text3">#3</string>
     <string name="password">Password</string>
     <string name="username">Username</string>
+    <string name="conPassword">Confirm Password</string>
     <string name="welcome">Welcome&#xA;Back</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="start">Get Started!</string>
     <string name="email">Email Id</string>
     <string name="hello">Hello&#xA;There</string>
-    <string name="budget_text">Rs 30000</string>
+    <string name="budget_text">30000</string>
     <string name="budget">BUDGET</string>
     <string name="spending">SPENDING</string>
-    <string name="spending_value">Rs 0.000000</string>
+    <string name="spending_value">0.000</string>
     <string name="next">NEXT</string>
     <string name="goal">You are one step away from your Goal</string>
     <string name="budget_input">Enter Your Budget</string>
     <string name="save_input">Enter The Amount You Want to Save</string>
     <string name="amount">Amount</string>
+    <string name="transaction">Transactions</string>
+    <string name="forget_text">Enter your email-id we will send you &#xA; a email to your password</string>
+    <string name="send">Send</string>
+    <string name="add_transaction">Add Transactions</string>
 </resources>
